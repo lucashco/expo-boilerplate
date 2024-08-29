@@ -8,7 +8,6 @@ export default function SignIn() {
   const {signIn} = useSignInUseCase();
 
   function handleSignIn({email, password}: {email: string; password: string}) {
-    console.log('VRAU');
     signIn({email, password});
   }
 

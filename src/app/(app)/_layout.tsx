@@ -1,14 +1,18 @@
 import {Redirect, Stack} from 'expo-router';
 
 export default function AppLayout() {
-  const user = false;
+  const user = true;
 
   if (!user) {
     return <Redirect href="/(auth)/SignIn" />;
   }
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{title: 'Home'}} />
+    <Stack initialRouteName="(drawer)">
+      <Stack.Screen
+        name="(drawer)"
+        options={{title: 'Home', headerShown: false}}
+      />
+      <Stack.Screen name="settings" options={{title: 'Settings'}} />
     </Stack>
   );
 }
