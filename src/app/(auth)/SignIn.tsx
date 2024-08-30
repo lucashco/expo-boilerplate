@@ -59,7 +59,7 @@ export default function SignIn() {
       />
 
       <Link
-        href="/(auth)/SignUp"
+        href="/(auth)/signup"
         style={{
           fontFamily: 'SpaceMono',
           fontSize: 16,
@@ -94,7 +94,7 @@ export default function SignIn() {
         </Text>
       </TouchableOpacity>
 
-      <Link href="/(auth)/SignUp" asChild>
+      <Link href="/(auth)/signup" asChild>
         <TouchableOpacity
           activeOpacity={0.8}
           style={{

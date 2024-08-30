@@ -1,6 +1,6 @@
 import {authAdapter} from './authAdapter';
 import {authApi} from './authApi';
-import {SignInData} from './authType';
+import {SignInData} from './authTypes';
 
 async function signIn(payload: SignInData) {
   const response = await authApi.signIn(payload);

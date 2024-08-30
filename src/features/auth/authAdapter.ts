@@ -1,4 +1,4 @@
-import {AuthCredentials, AuthCredentialsAPI} from './authType';
+import {AuthCredentials, AuthCredentialsAPI} from './authTypes';
 
 function toAuthData(authCredentialsAPI: AuthCredentialsAPI): AuthCredentials {
   return {

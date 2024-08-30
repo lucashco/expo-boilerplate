@@ -1,11 +1,24 @@
 import {Redirect, Stack} from 'expo-router';
+import {ActivityIndicator} from 'react-native';
+
+import {Screen} from '@/src/components';
+import {useSession} from '@/src/services';
 
 export default function AppLayout() {
-  const user = true;
+  const {session, isLoading} = useSession();
 
-  if (!user) {
-    return <Redirect href="/(auth)/SignIn" />;
+  if (isLoading) {
+    return (
+      <Screen>
+        <ActivityIndicator size="large" />
+      </Screen>
+    );
   }
+
+  if (!session) {
+    return <Redirect href="/(auth)/signin" />;
+  }
+
   return (
     <Stack initialRouteName="(drawer)">
       <Stack.Screen
