@@ -13,17 +13,17 @@ This document provides an overview of the project structure, outlining the organ
 Run the following command on your local environment:
 
 ```shell
-git clone --depth=1 https://github.com/ixartz/React-Native-Boilerplate.git my-project-name
+git clone https://github.com/lucashco/expo-boilerplate.git
 cd my-project-name
-npm install
+yarn install
 ```
 
 Then, you can run locally in development mode with live reload:
 
 ```shell
-npm run dev:ios
+yarn dev:ios
 # Or
-npm run dev:android
+yarn dev:android
 ```
 
 This will open the app in the iOS simulator or Android emulator.
