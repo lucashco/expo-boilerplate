@@ -12,11 +12,20 @@ This document provides an overview of the project structure, outlining the organ
 
 Run the following command on your local environment:
 
-```shell
-git clone https://github.com/lucashco/expo-boilerplate.git
-cd my-project-name
-yarn install
-```
+1. Clone o repositório
+   ```sh
+   git clone https://github.com/lucashco/expo-boilerplate.git
+   ```
+2. Navegue até o arquivo
+
+   ```sh
+   cd my-project-name
+   ```
+
+3. Instale pacotes com o Yarn
+   ```sh
+   yarn install
+   ```
 
 Then, you can run locally in development mode with live reload:
 
