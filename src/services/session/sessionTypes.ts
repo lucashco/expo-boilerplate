@@ -1,4 +1,4 @@
-import {AuthCredentials} from '@/src/features';
+import {AuthCredentials} from '@/features';
 
 export interface SessionService {
   session: AuthCredentials | null;

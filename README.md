@@ -2,6 +2,32 @@
 
 This document provides an overview of the project structure, outlining the organization of directories and files within the application.
 
+### Requirements
+
+- Node.js 14+ and npm
+- [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Android Studio Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+
+### Getting started
+
+Run the following command on your local environment:
+
+```shell
+git clone --depth=1 https://github.com/ixartz/React-Native-Boilerplate.git my-project-name
+cd my-project-name
+npm install
+```
+
+Then, you can run locally in development mode with live reload:
+
+```shell
+npm run dev:ios
+# Or
+npm run dev:android
+```
+
+This will open the app in the iOS simulator or Android emulator.
+
 ### `app`
 
 The `app` directory contains all the routes and screens. This is configured by expo framework.
@@ -11,9 +37,11 @@ The `app` directory contains all the routes and screens. This is configured by e
   - **`_layout`**: Is the root file, it's responsible for to inject global provider such as Redux, Themes, Styles, and so on.
 
     - **`(app)/`**: Contain all private screens.
+
       - `_layout.tsx`: It defines the app stack and add new screens, it's responsible for handle with authentication too.
 
       - **`(drawer)/`**: Drawer navigation.
+
         - `_layout.tsx`: It defines a drawer navigation and itself screens.
         - `ScreenName.tsx`: It defines a new drawer screen.
 
@@ -25,7 +53,6 @@ The `app` directory contains all the routes and screens. This is configured by e
     - **`(auth)/`**: Contain all public screens.
       - `_layout.tsx`: It defines the app stack and add new screens.
       - `ScreenName.tsx`: It defines a new stack screen.
-
 
 ### `api`
 
@@ -48,7 +75,9 @@ The `hooks` directory contains shared hooks used across modules.
 The `services` directory contains shared services used across modules.
 
 - **`@services/`**
+
   - `[ServiceFolder]`: Folder for a service, global state, custom providers, native resources and so on.
+
     - `[ServiceName].ts`: File that has service implementation.
     - `[ServiceTypes].ts`: Useful types for the service.
     - `[ServiceProvider].ts`: If necessary for any service.

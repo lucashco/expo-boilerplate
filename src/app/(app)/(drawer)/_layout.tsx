@@ -1,7 +1,7 @@
 import {Drawer} from 'expo-router/drawer';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
-import {TabBarIcon} from '@/src/components/navigation/TabBarIcon';
+import {TabBarIcon} from '@/components/navigation/TabBarIcon';
 
 export default function AppLayout() {
   return (

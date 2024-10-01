@@ -1,4 +1,4 @@
-import {AuthCredentials} from '@/src/features';
+import {AuthCredentials} from '@/features';
 
 import {storage} from '../storage';
 
