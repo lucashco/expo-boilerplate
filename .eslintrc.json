@@ -2,7 +2,12 @@
 
 {
   // Configuration for JavaScript files
-  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb-base",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["jsx-a11y"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -16,18 +21,11 @@
     // Configuration for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
-      "plugins": [
-        "@typescript-eslint",
-        "unused-imports",
-        "tailwindcss",
-        "simple-import-sort"
-      ],
+      "plugins": ["@typescript-eslint", "unused-imports", "simple-import-sort"],
       "extends": [
-        "plugin:tailwindcss/recommended",
         "airbnb",
         "airbnb-typescript",
         "airbnb/hooks",
-        "plugin:react/jsx-runtime",
         "plugin:prettier/recommended"
       ],
       "parserOptions": {
@@ -85,7 +83,7 @@
     // Configuration for e2e testing
     {
       "files": ["e2e/**/*.ts"],
-      "plugins": ["jest", "jest-formatting", "detox"],
+      "plugins": ["jest", "jest-formatting"],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest-formatting/recommended"
