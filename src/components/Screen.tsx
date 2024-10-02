@@ -1,7 +1,7 @@
 import {PropsWithChildren} from 'react';
 import {View} from 'react-native';
 
-import {useAppSafeArea} from '@/src/hooks';
+import {useAppSafeArea} from '@/hooks';
 
 export function Screen({children}: PropsWithChildren) {
   const {top, bottom} = useAppSafeArea();

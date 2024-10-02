@@ -1,8 +1,8 @@
 import {Redirect, Stack} from 'expo-router';
 import {ActivityIndicator} from 'react-native';
 
-import {Screen} from '@/src/components';
-import {useSession} from '@/src/services';
+import {Screen} from '@/components';
+import {useSession} from '@/services';
 
 export default function AppLayout() {
   const {session, isLoading} = useSession();

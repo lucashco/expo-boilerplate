@@ -1,8 +1,8 @@
 import {Link} from 'expo-router';
 import {Text, TextInput, TouchableOpacity} from 'react-native';
 
-import {Screen} from '@/src/components';
-import {useSignInUseCase} from '@/src/features/auth';
+import {Screen} from '@/components';
+import {useSignInUseCase} from '@/features/auth';
 
 export default function SignIn() {
   const {signIn} = useSignInUseCase();

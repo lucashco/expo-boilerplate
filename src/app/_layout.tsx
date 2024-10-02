@@ -7,8 +7,8 @@ import {Slot} from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import {useEffect} from 'react';
 
-import {useColorScheme} from '@/src/hooks/useColorScheme';
-import {SessionProvider} from '@/src/services';
+import {useColorScheme} from '@/hooks/useColorScheme';
+import {SessionProvider} from '@/services';
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 

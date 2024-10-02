@@ -1,6 +1,6 @@
 import {createContext, PropsWithChildren, useEffect, useState} from 'react';
 
-import {AuthCredentials} from '@/src/features';
+import {AuthCredentials} from '@/features';
 
 import {sessionStorage} from '../sessionStorage';
 import {SessionService} from '../sessionTypes';

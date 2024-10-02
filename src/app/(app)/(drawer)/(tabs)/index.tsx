@@ -1,6 +1,6 @@
 import {Text} from 'react-native';
 
-import {Screen} from '@/src/components';
+import {Screen} from '@/components';
 
 export default function HomePage() {
   return (

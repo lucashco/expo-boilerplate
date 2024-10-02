@@ -1,7 +1,7 @@
 import {useMutation} from '@tanstack/react-query';
 
-import {useSession} from '@/src/services';
-import {MutationOptions} from '@/src/types';
+import {useSession} from '@/services';
+import {MutationOptions} from '@/types';
 
 import {authService} from '../authService';
 import {AuthCredentials} from '../authTypes';
